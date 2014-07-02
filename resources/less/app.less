@@ -1,3 +1,43 @@
 
  @import "../../bower_components/bootstrap/less/bootstrap";
  @import "../../bower_components/bootstrap/less/theme";
+ @import "../../bower_components/less-elements/elements";
+ @import "../../bower_components/fontawesome/less/font-awesome";
+
+ @import "variables";
+ @import "color";
+ 
+ 
+ .mybox{
+  
+   height: @box_height;
+   border: @box_border solid @box_bordercolor;
+   
+   
+  }
+
+    div.box1{
+    .mybox;
+    border-size: 2px 3px 5px 8px;
+    background-color: @corporate-color;
+    }
+    
+    div.box2{
+    .mybox;
+    background-color: lighten(@corporate-color,30%);
+    .border-radius(@box_borderradius,@box_borderradius,@box_borderradius,@box_borderradius);
+    .gradient(#eFF, @mycolor,lighten(@mycolor, 30%));
+    }
+
+
+    div.box3{
+    .mybox;
+    background-color: darken(@corporate-color,30%);
+    .rounded(@box_borderradius);
+    .gradient(#eff, @mycolor,darken(@mycolor,30%));
+    }
+
+   .fa-border-red{
+   border-color: #fc9797;
+   }
+

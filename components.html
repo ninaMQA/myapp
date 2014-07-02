@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user scalable=no">
+	<title>Components</title>
+	<link rel="stylesheet" href="resources/css/app.css" />	
+		
+</head>
+	<body>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-6">
+	<table class="table table-striped table-bordered table-condensed table-hover"><!---utk buat stripe grey white dlm table--->
+		<thead>
+		
+		<tr>
+			<tr class="danger">
+			<td class="text-center">Bil</td>
+			<td>Nama</td>
+			<td>Umur</td>
+			<td></td>
+			</tr>
+		</tr>		
+		</thead>
+		<tbody>
+			<tr>
+				<td class="text-center">1</td>
+				<td>Kham</td>
+				<td>17</td>
+				<td><span class="glyphicon glyphicon-folder-open" style="color: #E02222;"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">2</td>
+				<td>Maya</td>
+				<td>15</td>
+				<td><span class="glyphicon glyphicon-folder-open"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">3</td>
+				<td>Sha</td>
+				<td>17</td>
+				<td><span class="gliphicon gliphicon-folder-open"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">4</td>
+				<td>Ecah</td>
+				<td>15</td>
+			</tr>		
+		</tbody>
+	</table>	
+	</div>
+	
+	<div class="col-md-6">
+	<div class="table-responsive"><!---membolehkan table keluar scroll bila paparan kecil--->
+	<table class="table table-striped table-bordered table-condensed table-hover"><!---utk buat stripe grey white dlm table--->
+		<thead>
+		<tr>
+			<td class="text-center">Bil</td>
+			<td>Nama</td>
+			<td>Umur</td>
+
+		</tr>		
+		</thead>
+		<tbody>
+			<tr>
+				<td class="text-center">1</td>
+				<td>Kham</td>
+				<td>17</td>
+				<td><span class="glyphicon glyphicon-folder-open" style="color: #E02222;"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">2</td>
+				<td>Maya</td>
+				<td>15</td>
+				<td><span class="glyphicon glyphicon-folder-open"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">3</td>
+				<td>Sha</td>
+				<td>17</td>
+				<td><span class="gliphicon gliphicon-folder-open"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">4</td>
+				<td>Ecah</td>
+				<td>15</td>
+			</tr>		
+		</tbody>
+	</table>		
+	
+	</div>
+
+</div>
+
+</div>
+
+	<div class="row">
+		
+		<div class="col-md-6"><!---design utk form responsive--->
+			
+			<form>
+				<div class="form-group">
+					<label for="email">Email Address</label>
+					<input type="email" class="form-control" placeholder="Email.."/>
+				</div>
+
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" placeholder="Password.."/>
+				</div>	
+
+				<div class="checkbox">
+					<label>
+					<input type="checkbox"/> Remember me
+					</label>
+				</div>				
+		
+				<button type="button" class="btn btn-default">Submit</button>	
+					
+			</form>
+			
+		</div>
+		<!---end of form responsive--->
+		
+		<div class="col-md-6"><!---design form biasa--->
+			<form>
+				<div class="form-group">
+					<label>Email Address</label>
+					<input type="email" placeholder="Email.."/>
+					
+					<br/>
+					
+					<label>Password</label>
+					<input type="password" placeholder="Password.."/>					
+					
+					<br/>
+					
+					<label><input type="checkbox"/> Remember me</label>
+					
+					<br/>
+					
+					<input type="button" value="Submit"/>			
+				</div>
+			</form>
+		</div>
+		<!---end of form biasa--->
+	
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-6">
+			<form class="form-inline">
+
+				<div class="form-group">
+					<label class="sr-only">Email Address</label> <!---sr=screen reader--->
+					<input type="email" class="form-control" placeholder="Email Address"/>
+				</div>
+				
+				<div class="form-group">
+					<label class="sr-only">Password</label>
+					<input type="password" class="form-control" placeholder="Password"/>
+				</div>
+				
+				<div class="form-group">
+					<label class="sr-only"><input type="checkbox"/>Remember me</label>
+				</div>				
+								
+			</form>
+		</div>
+		
+		<div class="col-md-6">
+			<form>
+				<input type="email" placeholder="Email Address">
+				<input type="password" placeholder="Password">
+				<input type="checkbox"> Remember me
+			</form>
+		</div>
+	</div>
+<br>	
+<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<form class="form-horizontal"> <!---buat label n box dlm 1 baris--->
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Email</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" placeholder="Email..">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Password</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" placeholder="Password..">
+					</div>
+				</div>
+	
+				<div class="form-group">
+					<label class="col-sm-offset-2 col-sm-10"> <!---offset utk buang column dpn yg xmo guna--->
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"/> Remember me
+							</label>
+						</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-offset-2 col-sm-10">
+						<button type="button" class="btn btn-default">Submit</button>	
+					</label>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+<hr>	
+	<div class="col-md-6">
+		<div class="form-group has-error">
+			<label class="control-label">Input Error</label>
+			<input type="text" class="form-control">
+		</div>
+		
+		<div class="form-group has-feedback">
+			<label class="control-label">Input Feedback</label>
+			<input type="text" class="form-control">
+		</div>
+		
+		<div class="form-group has-success">
+			<label class="control-label">Input Success</label>
+			<input type="text" class="form-control">
+		</div>
+
+		<div class="form-group has-warning">
+			<label class="control-label">Input Warning</label>
+			<input type="text" class="form-control">
+		</div>
+		
+	</div>
+
+<br/>
+
+<div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group has-success has-feedback">
+			<label class="control-label">Input Success</label>
+			<input type="text" class="form-control">
+			<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+			</div>
+			
+			<div class="form-group has-warning has-feedback">
+			<label class="control-label">Input Warning</label>
+			<input type="text" class="form-control">
+			<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+			</div>
+			
+			<div class="form-group has-error has-feedback">
+			<label class="control-label">Input Error</label>
+			<input type="text" class="form-control">
+			<span class="glyphicon glyphicon-exclamation-sign form-control-feedback"></span>
+			</div>
+			
+			<div class="form-group has-feedback has-feedback">
+			<label class="control-label">Input Feedback</label>
+			<input type="text" class="form-control">
+			<span class="fa fa-bitbucket-square form-control-feedback"></span>
+			</div>
+
+		</div>
+	</div>
+	
+</div>
+	
+<div class="row">
+	<input class="form-control input-lg" type="text" placeholder="large"/><br/>
+	<input class="form-control" type="text" placeholder="default"/><br/>
+	<input class="form-control input-sm" type="text" placeholder="small"/><br/>
+	<p></p>
+	
+	<div class="row">
+		<div class="col-xs-2"><!---saiz kotak--->
+			<input class="form-control">
+		</div>
+		<div class="col-xs-3">
+			<input class="form-control">
+		</div>
+		<div class="col-xs-4">
+			<input class="form-control">
+		</div>		
+	</div>
+	
+</div>	
+
+<br/>
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default"><!---kotak--->
+			<div class="panel-body">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			</div>
+		</div>				
+	</div>
+	
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<div class="panel-body">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+			</div>	
+			<div class="panel-footer">
+				<button class="btn btn-default">Submit</button>
+			</div>	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<div class="panel-body">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+			</div>	
+			<div class="panel-footer">
+				<button class="btn btn-default fa fa-bell"> Submit</button>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="panel panel-warning">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<div class="panel-body">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+			</div>	
+			<div class="panel-footer">
+				<button class="btn btn-default fa fa-paperclip"> Submit</button>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<div class="panel-body">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+			</div>	
+			<div class="panel-footer">
+				<button class="btn btn-default fa fa-bomb"> Submit</button>
+			</div>	
+		</div>
+	</div>
+
+	<div class="col-md-2">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<div class="panel-body">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+			</div>	
+			<div class="panel-footer">
+				<button class="btn btn-default">Submit</button>
+			</div>	
+		</div>
+	</div>
+
+	<div class="col-md-2">
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<div class="panel-body">
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+			</div>	
+			<div class="panel-footer">
+				<button class="btn btn-default">Submit</button>
+			</div>	
+		</div>
+	</div>
+	
+</div>
+<br/>
+
+<div class="row">
+	<!---table dlm panel--->
+	<div class="col-md-6">
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<div class="table-bordered">
+		<table class="table table-striped table-bordered table-condensed table-hover"><!---utk buat stripe grey white dlm table--->
+		<thead>
+		<tr>
+			<td class="text-center">Bil</td>
+			<td>Nama</td>
+			<td>Umur</td>
+
+		</tr>		
+		</thead>
+		<tbody>
+			<tr>
+				<td class="text-center">1</td>
+				<td>Kham</td>
+				<td>17</td>
+				<td><span class="glyphicon glyphicon-folder-open" style="color: #E02222;"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">2</td>
+				<td>Maya</td>
+				<td>15</td>
+				<td><span class="glyphicon glyphicon-folder-open"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">3</td>
+				<td>Sha</td>
+				<td>17</td>
+				<td><span class="gliphicon gliphicon-folder-open"></span></td>
+			</tr>
+			<tr>
+				<td class="text-center">4</td>
+				<td>Ecah</td>
+				<td>15</td>
+			</tr>		
+		</tbody>
+	</table>
+			<div class="panel-footer">
+				<button class="btn btn-default">Submit</button>
+			</div>	
+		</div>		
+	</div>
+	<!---end of table dlm panel--->
+	
+<!---form dlm panel--->
+	<div class="col-md-12">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h5>My Box</h5>
+			</div>
+			<form class="form-horizontal"> <!---buat label n box dlm 1 baris--->
+				<div class="form-group"><br/>
+					<label class="col-sm-2 control-label">Email</label>
+					<div class="col-sm-9">
+						<input type="email" class="form-control" placeholder="Email..">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Password</label>
+					<div class="col-sm-9">
+						<input type="password" class="form-control" placeholder="Password..">
+					</div>
+				</div>
+	
+				<div class="form-group">
+					<label class="col-sm-offset-2 col-sm-10"> <!---offset utk buang column dpn yg xmo guna--->
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"/> Remember me
+							</label>
+						</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-offset-2 col-sm-10">
+						<button type="button" class="btn btn-default">Submit</button>	
+					</label>
+				</div>
+			</form>
+	</div>	
+	<!---end of form dlm panel--->
+</div>
+
+	<br/>
+	
+	<div class="row">
+		<div class="col-md-6"><!---utk buat popup window--->
+			<button class="btn btn-success" data-toggle="modal" data-target="#mymodal">Launch Modal</button>
+			<div class="modal fade" id="mymodal" tabindex="-1"> <!---tabindex utk susun tab yg pergi dr satu kotak ke kotak lain. klu -1 maksudnya dia akan skip kotak tu--->
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">My Modal</h4>
+						</div>
+						<div class="modal-body">...</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal"> Close</button>
+							<button class="btn btn-primary"> Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+<br/>
+	<div class="row">
+		<div class="col-md-6"><!---utk buat popup window dlmnya ada table--->
+			<button class="btn btn-success" data-toggle="modal" data-target="#mymodaltable">Launch Modal Table</button>
+			<div class="modal fade" id="mymodaltable" tabindex="-1"> <!---tabindex utk susun tab yg pergi dr satu kotak ke kotak lain. klu -1 maksudnya dia akan skip kotak tu--->
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">My Modal</h4>
+						</div>
+						<div class="modal-body">
+						<table class="table table-striped table-bordered table-condensed table-hover"><!---utk buat stripe grey white dlm table--->
+								<thead>
+								<tr>
+									<td class="text-center">Bil</td>
+									<td>Nama</td>
+									<td>Umur</td>
+								</tr>		
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-center">1</td>
+									<td>Kham</td>
+									<td>17</td>
+									<td><span class="glyphicon glyphicon-folder-open" style="color: #E02222;"></span></td>
+								</tr>
+								<tr>
+									<td class="text-center">2</td>
+									<td>Maya</td>
+									<td>15</td>
+									<td><span class="glyphicon glyphicon-folder-open"></span></td>
+								</tr>
+								<tr>
+									<td class="text-center">3</td>
+									<td>Sha</td>
+									<td>17</td>
+									<td><span class="gliphicon gliphicon-folder-open"></span></td>
+								</tr>
+								<tr>
+									<td class="text-center">4</td>
+									<td>Ecah</td>
+									<td>15</td>
+								</tr>		
+							</tbody>
+						</table>						
+							
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal"> Close</button>
+							<button class="btn btn-primary"> Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+<br/>
+	<div class="row">
+		<div class="col-md-6"><!---utk buat popup window dlmnya form--->
+			<button class="btn btn-success" data-toggle="modal" data-target="#mymodalform">Launch Modal Form</button>
+			<div class="modal fade" id="mymodalform" tabindex="-1"> <!---tabindex utk susun tab yg pergi dr satu kotak ke kotak lain. klu -1 maksudnya dia akan skip kotak tu--->
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">My Modal</h4>
+						</div>
+						<div class="modal-body">
+						<form class="form-horizontal"> <!---buat label n box dlm 1 baris--->
+							<div class="form-group"><br/>
+								<label class="col-sm-2 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" placeholder="Email..">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-9">
+									<input type="password" class="form-control" placeholder="Password..">
+								</div>
+							</div>
+				
+							<div class="form-group">
+								<label class="col-sm-offset-2 col-sm-10"> <!---offset utk buang column dpn yg xmo guna--->
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"/> Remember me
+										</label>
+									</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-offset-2 col-sm-10">
+									<button type="button" class="btn btn-default">Submit</button>	
+								</label>
+							</div>
+						</form>
+
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal"> Close</button>
+							<button class="btn btn-primary"> Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<br />
+	<div class="row">
+		<div class="col-md-6">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#a" data-toggle="tab">Item A</a></li>
+				<li><a href="b" data-toggle="tab">Item B</a></li>
+				<li><a href="c" data-toggle="tab">Item C</a></li>
+				<li><a href="d" data-toggle="tab">Item D</a></li>
+			</ul>
+			
+
+				<div class="tab-content">
+				<div class= "tab-pane active" id="a">
+					<table class= "table"...>
+                </div>
+                
+                <div class= "tab-pane active" id="b">
+                	<form class="form-horizontal" ...>
+                </div>
+				
+                
+               
+			
+		</div>
+		</div>
+		
+	
+	
+	
+	<script src="bower_components/jquery/dist/jquery.min.js" type="application/javascript"></script> <!--- script better letak sblm tutup body--->
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+				
+	</body>
+</html>
